@@ -32,12 +32,13 @@ const UsersForm = ({ setUsers }) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="space-y-2">
+      <p className="mb-5 ml-20 uppercase">usersform</p>
+      <form onSubmit={handleSubmit} className="space-y-3 ">
         <label className="input input-bordered flex items-center gap-2">
           <BsFillPersonFill />
           <input
             type="text"
-            className="grow"
+            className="grow "
             placeholder="Username"
             value={name}
             onChange={handleNameChange}
@@ -47,7 +48,7 @@ const UsersForm = ({ setUsers }) => {
           <HiOutlineEnvelope />
           <input
             type="text"
-            className="grow"
+            className="grow "
             placeholder="Email"
             value={email}
             onChange={handleEmailChange}
@@ -58,7 +59,7 @@ const UsersForm = ({ setUsers }) => {
           <FaJoget />
           <input
             type="text"
-            className="grow"
+            className="grow "
             placeholder="Gen"
             value={gen}
             onChange={handleGenChange}
