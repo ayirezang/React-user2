@@ -13,16 +13,16 @@ const Users = ({ users, deleteUser, updateUser }) => {
             <p>Email:{user.email}</p>
             <p>Gen:{user.gen}</p>
 
-            {/* <div className="flex gap-2"> */}
-            {/* <EditUser user={user} updateUser={updateUser} /> */}
+            <div className="flex gap-2">
+              <EditUser user={user} updateUser={updateUser} />
 
-            {/* <button */}
-            {/* className="btn btn-secondary" */}
-            {/* onClick={() => deleteUser(user.id)} */}
-            {/* > */}
-            {/* delete */}
-            {/* </button> */}
-            {/* </div> */}
+              <button
+                className="btn btn-secondary"
+                onClick={(e) => deleteUser(user.id)}
+              >
+                delete
+              </button>
+            </div>
           </div>
         );
       })}
